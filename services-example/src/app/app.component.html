@@ -1,0 +1,21 @@
+<div>
+  Hello from Sherman
+  <br>
+
+    <label>Username</label>
+    <input type="text" name="username" autocomplete="off" [(ngModel)]="username" autofocus required>
+
+    <label>Password</label>
+    <input type="password" name="password" [(ngModel)]="password" required>
+
+<button (click)="login()" class="btn btn-lg btn-primary btn-block">Log in</button>
+  <br>
+  <br>
+  {{ auth_token }}
+
+  <div *ngFor="let mentor of some_string">
+    {{ mentor.preferred_name }}
+  </div>
+
+</div>
+
